@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <div class="container">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header pull-right">
+                        @Html.ActionLink("Patrick Yee - Portfolio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="navbar-brand">
+                            <a href="https://plus.google.com/u/0/115645219445068963390/posts/p/pub"><img class="img-circle" src="https://lh3.googleusercontent.com/-G07gdjMMKN8/VPTt4A--0KI/AAAAAAAAACw/emsVqhH1bRk/s200/Feb%2B20%2C%2B2015%2B12%3A36%3A25%2BPM.jpg" alt="Google+ Avatar" /></a>
+                        </div>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        @RenderBody()
+
+    <div class="container body-content">
+        <hr />
+        <div class="container">
+
+        </div>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - PY Development Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
