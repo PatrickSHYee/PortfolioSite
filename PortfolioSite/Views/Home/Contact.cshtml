@@ -1,22 +1,38 @@
-﻿@{
-    ViewBag.Title = "Contact";
-}
+﻿<!--
+    Contact page
+-->
+@model PortfolioSite.Models.Contact
 
 <div class="container">
     <div class="jumbotron">
-        <h2>@ViewBag.Title.</h2>
-        <h3>@ViewBag.Message</h3>
+        <h2>@ViewBag.Title</h2>
+        <p>@ViewBag.Message</p>
+
+        <!-- Throught email -->
+        <form class="form-horizontal" method="post" action="@Url.Action("Contact", "Home")">
+            <div class="form-group">
+                <label for="Name" class="col-xs-2 control-label">Your Name:</label>
+                <input type="text" class="form-control col-xs-10" id="Name" name="Name" placeholder="Mr. Anderson" required />
+            </div>
+            <div class="form-group">
+                <label for="Email" class="col-xs-2 control-label">Your Email:</label>
+                <input type="email" class="form-control col-xs-10" id="Email" name="Email" placeholder="YourName@BigNameCompany.com" required />
+            </div>
+            <div class="form-group">
+                <label for="Subject" class="col-xs-2 control-label">Subject:</label>
+                <input type="text" class="form-control col-xs-10" id="Subject" name="Subject" placeholder="Your Name - Questions?" required />
+            </div>
+            <div class="form-group">
+                <label for="Body" class="col-xs-2 control-label">Message:</label>
+                <textarea class="form-control col-xs-10" id="Body" name="Body" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="form-group text-center">
+                <button class="btn" value="Submit">Send</button>
+            </div>
+        </form>
 
         <address>
-            One Microsoft Way<br />
-            Redmond, WA 98052-6399<br />
-            <abbr title="Phone">P:</abbr>
-            425.555.0100
-        </address>
-
-        <address>
-            <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-            <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+            <strong>or email Patrick Yee:</strong>   <a href="mailto:PatrickSHYee@gmail.com">PatrickSHYee@gmail.com</a><br />
         </address>
     </div>
 </div>
