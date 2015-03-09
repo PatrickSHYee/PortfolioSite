@@ -76,5 +76,11 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public ActionResult Resume()
+        {
+            return View();
+        }
     }
 }

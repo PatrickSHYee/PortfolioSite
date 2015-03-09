@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="~/Content/font-awesome.css"/>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
@@ -29,6 +31,8 @@
                         <ul class="nav navbar-nav">
                             <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                             <li><a href="@Url.Action("About", "Home")">About</a></li>
+                            <li><a href="@Url.Action("Resume", "Home")">Resume</a></li>
+                            <li><a href="@Url.Action("Index", "Projects")">Projects</a></li>
                             <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                         </ul>
                     </div>
@@ -40,12 +44,19 @@
 
     <div class="container body-content">
         <hr />
-        <div class="container">
-
-        </div>
-        <footer>
-            <p>&copy; @DateTime.Now.Year - PY Development Application</p>
-        </footer>
+            <section class="container jumbotron socialFooter">
+                <div class="navbar-text row">
+                    <!--fontawesome icons-->
+                    <a href="https://github.com/patrickshyee"><i class="fa fa-github-square fa-4x"></i></a>
+                    <a href="https://plus.google.com/u/0/115645219445068963390/about"><i class="fa fa-google-plus-square fa-4x"></i></a>
+                    <a href="https://www.facebook.com/5k3l3t0r"><i class="fa fa-facebook-square fa-4x"></i></a>
+                    <a href="http://steamcommunity.com/id/5k3l3t0r"><i class="fa fa-steam-square fa-4x"></i></a>
+                    <a href="https://soundcloud.com/5k3l3t0rgamer"><i class="fa fa-soundcloud fa-4x"></i></a>
+                </div>
+                <footer class="text-right">
+                    <p style="color:#000000">&copy; @DateTime.Now.Year - PY Development Application</p>
+                </footer>
+                </section>
     </div>
 
     @Scripts.Render("~/bundles/jquery")

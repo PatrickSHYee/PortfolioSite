@@ -163,6 +163,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\ProjectsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -191,12 +192,24 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\img\About.jpg" />
+    <Content Include="Content\img\Adobe-Photoshop-CC-icon.png" />
     <Content Include="Content\img\Background.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\country-music.jpg" />
+    <Content Include="Content\img\eclipse.png" />
+    <Content Include="Content\img\gimp.png" />
+    <Content Include="Content\img\heavymetal.png" />
     <Content Include="Content\img\landingPage.jpg" />
+    <Content Include="Content\img\MVCHtml5Toolkit.1.2.0.png" />
+    <Content Include="Content\img\ScrumMaster_Logo_Seal.png" />
+    <Content Include="Content\img\visual_studio_2010_matt.png" />
+    <Content Include="Content\img\YouTube-logo-light.png" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -219,6 +232,12 @@
       <DependentUpon>Contacts.edmx</DependentUpon>
       <LastGenOutput>Contacts.cs</LastGenOutput>
     </Content>
+    <Content Include="Content\readables\PatrickYeeResume.pdf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -270,6 +289,10 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Home\ThankYou.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
+    <Content Include="Views\Projects\Index.cshtml" />
+    <Content Include="Views\Projects\Past.cshtml" />
+    <Content Include="Views\Projects\Upcoming.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
