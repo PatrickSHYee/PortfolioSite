@@ -145,7 +145,15 @@ h3 {
     color: red;
 }
 
-.navbar-text >a:hover .fa-github-square{
+.navbar-text a:hover .fa-github-square{
+    color: #333333;
+}
+
+a .fa-github{
+    color: #aaaaaa;
+}
+
+a:hover .fa-github{
     color: #333333;
 }
 
