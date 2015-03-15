@@ -86,6 +86,14 @@ textarea {
   background-color: transparent;
 }
 
+.nav > li.disabled > a{
+    color: #000000;
+}
+
+.dropdown hover{
+    visibility: visible;
+}
+
 /* Full Slider */
 .carousel,
 .item,
@@ -167,4 +175,8 @@ a:hover .fa-github{
 
 .navbar-text > a:hover .fa-soundcloud{
     color: #ff8800;
+}
+
+a .fa-youtube {
+    color: red;
 }

@@ -13,5 +13,15 @@ namespace PortfolioSite.Controllers
         {
             return View();
         }
+
+        public ActionResult Recent()
+        {
+            return View();
+        }
+
+        public ActionResult Upcoming()
+        {
+            return View();
+        }
     }
 }

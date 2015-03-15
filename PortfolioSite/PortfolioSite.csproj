@@ -199,12 +199,27 @@
     <Content Include="Content\img\Background.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\screenshot\CheeseNibber1.png" />
     <Content Include="Content\img\country-music.jpg" />
     <Content Include="Content\img\eclipse.png" />
+    <Content Include="Content\img\screenshot\Favorites.png" />
     <Content Include="Content\img\gimp.png" />
     <Content Include="Content\img\heavymetal.png" />
     <Content Include="Content\img\landingPage.jpg" />
     <Content Include="Content\img\MVCHtml5Toolkit.1.2.0.png" />
+    <Content Include="Content\img\screenshot\pokerPlayer.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 14.24.41.png" />
+    <Content Include="Content\img\screenshot\mastOftheUniTitle.png" />
+    <Content Include="Content\img\screenshot\mastOftheUni1.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 15.13.38.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 15.13.52.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 15.14.00.png" />
+    <Content Include="Content\img\screenshot\HangingMan.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 17.04.07.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 17.04.26.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 19.10.47.png" />
+    <Content Include="Content\img\screenshot\Screenshot 2015-03-08 19.11.06.png" />
+    <Content Include="Content\img\screenshot\Speed.png" />
     <Content Include="Content\img\ScrumMaster_Logo_Seal.png" />
     <Content Include="Content\img\visual_studio_2010_matt.png" />
     <Content Include="Content\img\YouTube-logo-light.png" />
@@ -238,6 +253,8 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Content\readables\PersonalProjectDocument-Battlebots.pdf" />
+    <Content Include="Content\readables\PersonalProjectDocument-Kingdom.pdf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -291,8 +308,8 @@
     <Content Include="Views\Home\ThankYou.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Projects\Index.cshtml" />
-    <Content Include="Views\Projects\Past.cshtml" />
     <Content Include="Views\Projects\Upcoming.cshtml" />
+    <Content Include="Views\Projects\Recent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

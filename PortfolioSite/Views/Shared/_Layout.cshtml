@@ -16,23 +16,40 @@
             <div class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container">
                     <div class="navbar-header pull-right">
-                        @Html.ActionLink("Patrick Yee - Portfolio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                        <a href="@Url.Action("Index", "Home")" class="navbar-brand"><img class="img-circle" src="https://lh3.googleusercontent.com/-G07gdjMMKN8/VPTt4A--0KI/AAAAAAAAACw/emsVqhH1bRk/s200/Feb%2B20%2C%2B2015%2B12%3A36%3A25%2BPM.jpg" alt="Google+ Avatar" />Patrick Yee - Portfolio</a>
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <div class="navbar-brand">
-                            <a href="https://plus.google.com/u/0/115645219445068963390/posts/p/pub"><img class="img-circle" src="https://lh3.googleusercontent.com/-G07gdjMMKN8/VPTt4A--0KI/AAAAAAAAACw/emsVqhH1bRk/s200/Feb%2B20%2C%2B2015%2B12%3A36%3A25%2BPM.jpg" alt="Google+ Avatar" /></a>
-                        </div>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li><a href="@Url.Action("Index", "Home")">Home</a></li>
                             <li><a href="@Url.Action("About", "Home")">About</a></li>
                             <li><a href="@Url.Action("Resume", "Home")">Resume</a></li>
-                            <li><a href="@Url.Action("Index", "Projects")">Projects</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Projects<span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="@Url.Action("Recent", "Projects")#top"><h3>Recent Projects</h3></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new { id = "Favor" })#Favor">Favorit.es</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new {id="Nibbler"})#Nibbler">Cheese Nibbler</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="Master"})#Master">Master of the Universe</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="Poker"})#Poker">Poker Player</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="Speed"})#Speed">Speed is the Key</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="CSV"})#CSV">CSV: Listening Habits and Real Estate</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="Daily"})#Daily">Reddit: Daily Programmer</a></li>
+                                    <li><a href="@Url.Action("Recent", "Projects", new{id="Hanging"})#Hanging">The Hanging Man</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="@Url.Action("Upcoming", "Projects")"><h3>Upcoming and Past Projects</h3></a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="@Url.Action("Upcoming", "Projects")#Bots">Battlebots</a></li>
+                                    <li><a href="@Url.Action("Upcoming", "Projects")#King">Kingdoms</a></li>
+                                    <li><a href="@Url.Action("Upcoming", "Projects", new{id ="Past"})#Past">Past Projects</a>
+                                    </ul>
+                            </li>
                             <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
                         </ul>
                     </div>
@@ -41,8 +58,7 @@
         </div>
     </div>
         @RenderBody()
-
-    <div class="container body-content">
+    <div class="container">
         <hr />
             <section class="container jumbotron socialFooter">
                 <div class="navbar-text row">
